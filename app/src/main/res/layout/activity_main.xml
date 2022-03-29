@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#567"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merienda_one"
+        android:text="Weather now"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/yourCity"
+        android:textColorHint="@color/white"
+        android:hint="Your city"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        android:fontFamily="@font/merienda_one"
+        android:textSize="25sp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/logo"
+        android:backgroundTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+        android:layout_below="@+id/yourCity"
+        android:text="Check weather"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/merienda_one"
+        android:id="@+id/checkWeatherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/resultTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkWeatherButton"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/merienda_one"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/resultTemperatureRealFeel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultTemperature"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/merienda_one"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/windTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultTemperatureRealFeel"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/merienda_one"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/cloudTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/windTextView"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/merienda_one"
+        android:textColor="@android:color/white"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <Button
+        android:layout_below="@+id/cloudTextView"
+        android:text="Check Air Quality"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="50dp"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/merienda_one"
+        android:id="@+id/goToAirQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+
+
+</RelativeLayout>
